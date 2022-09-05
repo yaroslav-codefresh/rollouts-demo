@@ -41,7 +41,7 @@ jobs:
           CF_IMAGE: ${{env.CF_IMAGE}}
 
           # Container registry integration where the image is stored.
-          CF_CONTAINER_REGISTRY_INTEGRATION: 'docker'
+          CF_CONTAINER_REGISTRY_INTEGRATION: 'dockerhub'
 
           # Git branch with the commit  Pull Request data to add to the image. Pass the branch from the event payload used to trigger your action.
           CF_GIT_BRANCH: ${{ github.event.pull_request.head.ref }}
